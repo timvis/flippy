@@ -11,7 +11,7 @@ import sys
 import argparse
 from PIL import Image, GifImagePlugin
 from fpdf import FPDF
-# from moviepy.editor import *
+from moviepy.editor import *
 
 
 class Size:
@@ -270,7 +270,8 @@ def main():
         output_file_name=args.out,
         height_mm=args.height,
         dpi=args.dpi,
-        offset=args.offset
+        offset=args.offset,
+        fps=args.fps
     )
 
 if __name__ == '__main__':
